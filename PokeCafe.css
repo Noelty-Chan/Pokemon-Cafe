@@ -1,13 +1,64 @@
 body{
-
+font-family: Lato, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, Sans Serif;
+background: #ffffff;
 }
 
 header,footer{
+	background-image:linear-gradient(0deg,#c36736 0,#ca6f40 29%,#ca6f40 100%);
+	text-transform: uppercase;
+	background-color: #ca6f40;
+	color: #a64523;
+}
+
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	border-bottom-width:10px;
+	border-bottom-style:solid;
+	border-bottom-color:#875a3f;
+	height: 100px;
 
 }
 
-p,a,blockquote,figcaption{
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	border-top-width:10px;
+	border-top-style:solid;
+	border-top-color:#875a3f;
+	height: 100px;
+}
 
+h1{
+
+}
+
+h2{
+	font-weight: 500; 
+	color: #ffffff; 
+	background-color: #ff7917; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	width: 100px;
+	height: 18px;
+	padding-bottom: 2px;
+	margin-left: 10px;
+	border-radius: 5px;
+
+}
+
+h3{
+
+}
+p,a,blockquote,figcaption{
+	font-size:; 
 }
 
 li,ol,ul{
@@ -16,4 +67,15 @@ li,ol,ul{
 
 a{
 
+}
+
+.cb-fill {
+color: white;
+border-style: solid;
+border-color:#4c4b31 #5e6543 #5e6543 #4c4b31;
+background:#5e6543;}
+
+.cb-frame {outline-style: outset;
+outline-color:#a64523;
+background:#5e6543;
 }
