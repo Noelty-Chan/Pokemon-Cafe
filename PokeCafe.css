@@ -1,6 +1,7 @@
 body{
-font-family: Lato, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, Sans Serif;
-background: #ffffff;
+	font-family: Lato, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, Sans Serif;
+	background: #ffffff;
+	line-height: 1.5;
 }
 
 header,footer{
@@ -35,12 +36,21 @@ footer{
 	height: 100px;
 }
 
-h1{
+div{
+	display: block;
+}
 
+h1{
+	font-size: 64px;
+	font-weight: 700;
+	background-color: #875a3f;
+	border-radius: 10px;
+	padding-bottom: 2px;
 }
 
 h2{
-	font-weight: 500; 
+	font-size: 18px;
+	font-weight: 300; 
 	color: #ffffff; 
 	background-color: #ff7917; 
 	display: flex; 
@@ -50,32 +60,51 @@ h2{
 	height: 18px;
 	padding-bottom: 2px;
 	margin-left: 10px;
-	border-radius: 5px;
-
+	border-radius: 10px;
 }
 
 h3{
 
 }
 p,a,blockquote,figcaption{
-	font-size:; 
+	font-size: 12px;
+	font-weight: 300; 
+	color: #ebb994;
+	box-sizing: border-box;
 }
 
-li,ol,ul{
-
+dl,dt{
+	border-bottom: 4px dotted #bc9b5d
 }
 
-a{
 
+.logo{
+	position: relative;
+	text-align: center;
+	background: 0 0;
+	border:0;
+	margin:0;
+	outline:0;
+	padding:0;
 }
 
-.cb-fill {
+.flourish{
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #641c17;
+}
+
+.chalk{
+	color: #c5cca0;
+}
+
+.cb-fill{
 color: white;
 border-style: solid;
 border-color:#4c4b31 #5e6543 #5e6543 #4c4b31;
 background:#5e6543;}
 
-.cb-frame {outline-style: outset;
+.cb-frame{outline-style: outset;
 outline-color:#a64523;
 background:#5e6543;
 }
