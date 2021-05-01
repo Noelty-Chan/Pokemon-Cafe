@@ -1,3 +1,10 @@
+html{
+	text-overflow: hidden;
+	overflow: scroll;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
 body{
 	font-family: Lato, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, Sans Serif;
 	background: #fcefd7;
@@ -6,8 +13,6 @@ body{
 	margin: 0px auto;
 	padding: 0px auto;
 	max-width: 100%;
-	text-overflow: hidden;
-	overflow: hidden;
 }
 
 header,footer{
@@ -20,17 +25,20 @@ header,footer{
 	background-color: #ca6f40;
 	color: #a64523;
 	box-sizing: initial;
+	text-overflow: hidden;
+	overflow: hidden;	
 }
 
 header{
 	border-bottom-width: 10px;
 	border-bottom-style: solid;
 	border-bottom-color: #875a3f;
-	height: 100px;
+	height: 105px;
 	padding-bottom: 25px;
 	top: 0px;
 	position: fixed;
 	text-align: left;
+	padding-top: 10px;
 }
 
 header img{
@@ -49,8 +57,6 @@ footer{
 	text-align: center;
 	padding-top: 25px;
 	position: relative;
-	max-width: 100%;
-	margin-top: -15px;
 }
 
 nav{
@@ -78,7 +84,6 @@ li a{
 	font-size: 20px;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 20px;
 	font-weight: normal;
 }
 
@@ -87,13 +92,13 @@ div{
 	top: 50px;
 	margin-bottom: 75px;
 	max-height: 100%;
-	text-overflow: hidden;
 	overflow: hidden;
+	text-overflow: hidden;
 }
 
 h1{
 	display: block;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 700;
 	border-radius: 10px;
 	text-align: center;
@@ -106,19 +111,19 @@ h1{
 h2{
 	display: block;
 	color: #875a3f;
-	font-size: 40px;
+	font-size: 25px;
 	font-weight: 700;
-	background-color: #e4ab80;
+	background-color: #ebb994;
 	border-radius: 10px;
 	text-align: center;
-	width: 50%;
+	width: 25%;
 	margin: 0px auto;
 	top: 100px;
 	text-transform: uppercase;
 }
 
 h3{
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 300;
 	color: #ffffff;
 	background-color: #ff7917;
@@ -145,13 +150,29 @@ p{
     word-break: break-word;
 }
 
+a{
+	color: #bc9b5d;
+
+}
+
+figure{
+	vertical-align: baseline;
+}
+
 dl,dt{
-	border-bottom: 4px dotted #bc9b5d
+	border-bottom: 4px dotted #bc9b5d;
 }
 
 img{
 	max-width: 100%
 	max-height: 100%;
+}
+
+hr{
+	border-top: 5px dotted #bc9b5d;
+	border-bottom-color: transparent;
+	margin-right: 25px;
+	margin-left: 25px;
 }
 
 .logo{
@@ -163,7 +184,7 @@ img{
 
 .limit{
 	margin: 125px 100px 0px;
-    padding-bottom: 17%;	
+    padding-bottom: 15%;	
     background: #fef7eb;
 	text-overflow: hidden;
 	overflow: hidden;
@@ -240,9 +261,21 @@ margin: 0 auto;
 }
 
 .item{
+border-style:solid;
+border-color: #875a3f; 
+border-width:5px;
+border-radius:25px;
 padding: 0px 15px;
 margin: 0px 0px 30px;
-width: 600px;
-height: 600px;
+width: 100%;
+height: 100%;
 display: inline-block;
+background: #fcefd7;
+color: #641c17;
+text-decoration: none;
+}
+
+a.item:hover{
+	background: #fef7eb;
+	color: #bc9b5d;
 }
