@@ -3,8 +3,8 @@ body{
 	background: #fcefd7;
 	color: #bc9b5d;
 	line-height: 1.5;
-	margin: 0px;
-	padding: 0px;
+	margin: 0px auto;
+	padding: 0px auto;
 }
 
 header,footer{
@@ -47,6 +47,7 @@ footer{
 	position: relative;
 	bottom: 0px;
 	top: 0px;
+	max-width: 100%;
 }
 
 nav{
@@ -78,16 +79,20 @@ li a{
 }
 
 div{
-	display: block;
+	display: inline-block;
 	top: 70px;
 }
 
 h1{
+	display: block;
 	font-size: 64px;
 	font-weight: 700;
 	background-color: #875a3f;
 	border-radius: 10px;
-	padding-bottom: 2px;
+	text-align: center;
+	width: 50%;
+	margin: 50px auto;
+	top: 100px;
 }
 
 h2{
@@ -98,24 +103,27 @@ h2{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100px;
+	max-width: 150px;
 	height: 18px;
+	padding-top: 2px; 
 	padding-bottom: 2px;
-	margin-left: 10px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
-p,a,blockquote,figcaption{
+p{
 	font-size: 12px;
 	font-weight: 300;
 	color: #ebb994;
 	box-sizing: border-box;
+	max-width: 1000px;
+	text-align: left;
+	padding: 50px;
+	top: 0px;
 }
 
 dl,dt{
 	border-bottom: 4px dotted #bc9b5d
 }
-
 
 .logo{
 	border:0px;
@@ -123,6 +131,18 @@ dl,dt{
 	outline:0px;
 	padding:0px;
 }
+
+.container{
+	margin-top: 100px;
+	margin-left:50px;
+	margin-right:50px; 
+	background: #fef7eb;
+	text-overflow: hidden;
+	overflow: hidden;
+	text-align: center;
+	height: 100%;
+}
+
 
 .flourish{
 	font-size: 16px;
@@ -145,14 +165,15 @@ outline-color:#a64523;
 background:#5e6543;
 }
 
-.center {
+.center{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 1000px;
 }
 
-.action {
+.action{
+	color: #641c17;
 	border-style: none none solid none;
 	border-color: #ebb994;
 	border-width: 5px;
@@ -161,4 +182,19 @@ background:#5e6543;
 	outline-color: #641c17;
 	outline-width: 5px;
 	padding:5px 20px;
+}
+
+nav li.shrink-on-hover{
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.shrink-on-hover:hover, .shrink-on-hover:focus, .shrink-on-hover:active{
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
 }
