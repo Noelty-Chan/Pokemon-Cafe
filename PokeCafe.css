@@ -5,6 +5,9 @@ body{
 	line-height: 1.5;
 	margin: 0px auto;
 	padding: 0px auto;
+	max-width: 100%;
+	text-overflow: hidden;
+	overflow: hidden;
 }
 
 header,footer{
@@ -16,6 +19,7 @@ header,footer{
 	text-transform: uppercase;
 	background-color: #ca6f40;
 	color: #a64523;
+	box-sizing: initial;
 }
 
 header{
@@ -45,9 +49,8 @@ footer{
 	text-align: center;
 	padding-top: 25px;
 	position: relative;
-	bottom: 0px;
-	top: 0px;
 	max-width: 100%;
+	margin-top: -15px;
 }
 
 nav{
@@ -55,6 +58,7 @@ nav{
 	z-index: 1;
 	width: 100%;
 	top: 25px;
+	margin-bottom: 100px;
 }
 
 nav ul li{
@@ -80,23 +84,41 @@ li a{
 
 div{
 	display: inline-block;
-	top: 70px;
+	top: 50px;
+	margin-bottom: 75px;
+	max-height: 100%;
+	text-overflow: hidden;
+	overflow: hidden;
 }
 
 h1{
 	display: block;
-	font-size: 64px;
+	font-size: 40px;
 	font-weight: 700;
-	background-color: #875a3f;
 	border-radius: 10px;
 	text-align: center;
 	width: 50%;
-	margin: 50px auto;
+	margin: 0px auto;
 	top: 100px;
+	text-transform: uppercase;
 }
 
 h2{
-	font-size: 18px;
+	display: block;
+	color: #875a3f;
+	font-size: 40px;
+	font-weight: 700;
+	background-color: #e4ab80;
+	border-radius: 10px;
+	text-align: center;
+	width: 50%;
+	margin: 0px auto;
+	top: 100px;
+	text-transform: uppercase;
+}
+
+h3{
+	font-size: 25px;
 	font-weight: 300;
 	color: #ffffff;
 	background-color: #ff7917;
@@ -111,18 +133,25 @@ h2{
 }
 
 p{
-	font-size: 12px;
-	font-weight: 300;
-	color: #ebb994;
-	box-sizing: border-box;
-	max-width: 1000px;
-	text-align: left;
-	padding: 50px;
-	top: 0px;
+	font-size: 15px;
+    font-weight: 300;
+    color: #bc9b5d;
+    box-sizing: border-box;
+    max-width: 1000px;
+    text-align: left;
+    padding: 0px 50px 50px 50px;
+    padding-top: 0px;
+    top: 0px;
+    word-break: break-word;
 }
 
 dl,dt{
 	border-bottom: 4px dotted #bc9b5d
+}
+
+img{
+	max-width: 100%
+	max-height: 100%;
 }
 
 .logo{
@@ -132,17 +161,21 @@ dl,dt{
 	padding:0px;
 }
 
-.container{
-	margin-top: 100px;
-	margin-left:50px;
-	margin-right:50px; 
-	background: #fef7eb;
+.limit{
+	margin: 125px 100px 0px;
+    padding-bottom: 17%;	
+    background: #fef7eb;
 	text-overflow: hidden;
 	overflow: hidden;
 	text-align: center;
-	height: 100%;
+	z-index: -1;
 }
 
+.fine-print{
+	font-size: 15px;
+    font-weight: 300;
+    color: #ebb994;
+}
 
 .flourish{
 	font-size: 16px;
@@ -167,6 +200,7 @@ background:#5e6543;
 
 .center{
   display: block;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
   width: 1000px;
@@ -197,4 +231,18 @@ nav li.shrink-on-hover{
 .shrink-on-hover:hover, .shrink-on-hover:focus, .shrink-on-hover:active{
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
+}
+
+.menu{
+padding: 35px 0px 0px;
+max-width: 1000px
+margin: 0 auto;
+}
+
+.item{
+padding: 0px 15px;
+margin: 0px 0px 30px;
+width: 600px;
+height: 600px;
+display: inline-block;
 }
