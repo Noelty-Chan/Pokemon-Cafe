@@ -68,7 +68,14 @@ nav ul{
 	padding: 30px;
 }
 
-
+li a{
+	color: #a64523;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: normal;
+}
 
 div{
 	display: block;
@@ -98,9 +105,6 @@ h2{
 	border-radius: 10px;
 }
 
-h3{
-
-}
 p,a,blockquote,figcaption{
 	font-size: 12px;
 	font-weight: 300;
@@ -146,4 +150,15 @@ background:#5e6543;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.action {
+	border-style: none none solid none;
+	border-color: #ebb994;
+	border-width: 5px;
+	background:#fcefd7;
+	outline-style:solid;
+	outline-color: #641c17;
+	outline-width: 5px;
+	padding:5px 20px;
 }
