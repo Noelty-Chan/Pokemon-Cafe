@@ -11,7 +11,6 @@ body{
 	color: #bc9b5d;
 	line-height: 1.5;
 	margin: 0px auto;
-	padding: 0px auto;
 	max-width: 100%;
 	font-weight: 300;
 }
@@ -308,12 +307,6 @@ nav li.shrink-on-hover{
 	transform: scale(0.8);
 }
 
-.menu{
-	padding: 35px 0px 0px;
-	max-width: 1000px
-	margin: 0 auto;
-}
-
 .lunch-specials, .dinner-specials{
 	border-style:solid;
 	border-color: #875a3f; 
@@ -322,7 +315,7 @@ nav li.shrink-on-hover{
 	padding: 0px 15px;
 	margin: -50px 0px 45px;
 	max-width: 300px;
-	max-height: 400px;
+	max-height: 350px;
 	display: inline-block;
 	background: #fcefd7;
 	color: #641c17;
@@ -337,8 +330,8 @@ nav li.shrink-on-hover{
 	border-radius: 25px;
 	padding: 0px 15px;
 	margin: -50px 0px 45px;
-	max-width: 245px;
-	max-height: 400px;
+	max-width: 235px;
+	max-height: 350px;
 	display: inline-block;
 	background: #fcefd7;
 	color: #641c17;
@@ -351,6 +344,7 @@ nav li.shrink-on-hover{
 	font-weight: 900;
 	text-align: center;
 	text-transform: uppercase;
+	margin-top: 0px;
 }
 .item{
 	color: #641c17;
@@ -367,6 +361,16 @@ nav li.shrink-on-hover{
 	height: 50%;
 	display: inline-block;
 	text-decoration: none;
+}
+
+.menu-options{
+	width: 100px;
+	padding-right: 50px;
+}
+
+.menu-options-redux{
+	width: 65px;
+	padding-right: 10px;
 }
 
 a.item:hover{
@@ -464,7 +468,6 @@ td:first-child::after{
 	margin-left: 15px;
 	border-bottom: 1px dotted #c5cca0;
 	top: 15px;
-	bottom: 10px;
 }
 
 td:last-child{
